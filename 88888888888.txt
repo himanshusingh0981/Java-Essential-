@@ -1,0 +1,15 @@
+ public class Employee
+ {
+     int name,age,city;
+     public void display()
+     {
+         System.out.println("The name is Saurabh");
+         System.out.println("The age is 23");
+         System.out.println("The city is chennai");
+     }
+     public static void main(String[] args)
+     {
+         Employee a= new Employee();
+         a.display();
+     }
+ }
