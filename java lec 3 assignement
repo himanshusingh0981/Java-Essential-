@@ -1,0 +1,34 @@
+import java.util.Scanner;
+import java.lang.*;
+import java.io.*;
+public class HelloWorld{
+
+     public static void main(String []args){
+        
+        // your code goes here
+		 Scanner sc =new Scanner(System.in);
+        double phy; double che,math,eng,java;
+        double per;
+        System.out.println("Enter phy marks out of 100 :");
+        phy =sc.nextDouble();
+        System.out.println("Enter chem marks out of 1:");
+        che =sc.nextDouble();
+        System.out.println("Enter math marks out of 1:");
+        math =sc.nextDouble();
+        System.out.println("Enter eng marks out of 1 :");
+        eng = sc.nextDouble();
+        System.out.println("Enter java marks out of 1 :");
+        java = sc.nextDouble();
+        per=(phy+che+math+eng+java)*100/500;
+        if(per>=80){
+             System.out.println("Grade A");
+        }else if(per>=60&& per<80)
+        {
+            System.out.println("Grade B");
+        }
+        else
+        {
+            System.out.println("Grade C");
+        }
+     }
+}
